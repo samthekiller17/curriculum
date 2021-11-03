@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+
+}
+
+.bold{
+    font-family: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.semi-bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.resumen{
+    width: 700px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.resumen .resumen_izquierda{
+    width: 280px;
+    background: #0bb5f4;
+}
+
+.resumen .resumen_izquierda .resumen_perfil{
+    width: 100%;
+    height: 280px;
+}
+
+.resumen .resumen_izquierda .resumen_perfil img{
+    width: 100%;
+    height: 100%;
+}
+
+.resumen .resumen_izquierda .resumen_contenido{
+    padding: 0 25px;
+
+}
+
+.resumen .titulo{
+    margin-bottom: 20px;
+}
+
+.resumen .resumen_izquierda .bold{
+    color: #fff;
+}
+
+.resumen .resumen_izquierda .regular{
+    color: #b1eaff;
+}
+
+.resumen .resumen_de_items{
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+
+}
+
+.resumen .resumen_izquierda .resumen_de_items:last-child,
+.resumen .resumen_derecha .resumen_de_items:last-child{
+    border-bottom: 0px;
+}
+
+.resumen .resumen_izquierda ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resumen .resumen_izquierda ul li:last-child{
+    margin-bottom: 0;
+}
+
+.resumen .resumen_izquierda ul li .icono{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.resumen .icono i,
+.resumen .resumen_derecha .resumen_hobbys ul li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resumen .resumen_izquierda ul li .datos{
+    color: #b1eaff;
+}
+
+.resumen .resumen_izquierda .resumen_habilidades ul li{
+    color: #b1eaff;
+    justify-content: space-between;
+
+}
+
+.resumen .resumen_izquierda .resumen_informacion ul li{
+    color: #b1eaff;
+}
+
+.resumen .resumen_izquierda .resumen_habilidades ul li .nombre_habilidades{
+    width: 25%;
+}
+
+.resumen .resumen_izquierda .resumen_habilidades ul li .progreso_habilidades{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+}
+
+.resumen .resumen_izquierda .resumen_habilidades ul li .habilidades_per{
+    width: 15%; 
+}
+
+.resumen .resumen_izquierda .resumen_habilidades ul li .progreso_habilidades span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.resumen .resumen_derecha{
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resumen .resumen_derecha .bold{
+    color: #0bb5f4;   
+}
+
+.resumen .resumen_derecha .resumen_educacion ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.resumen .resumen_derecha ul li{
+    position: relative;
+}
+
+.resumen .resumen_derecha ul li .dato{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resumen .resumen_derecha ul li .informacion{
+    margin-bottom: 20px;
+}
+
+.resumen .resumen_derecha ul li:last-child .informacion{
+    margin-bottom: 0;
+}
+.resumen .resumen_derecha .resumen_educacion ul li::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+
+}
+
+.resumen .resumen_derecha .resumen_educacion ul li::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 3px;
+    height: 115px;
+    background: #0bb5f4;
+
+}
+
+.resumen .resumen_derecha .resumen_hobbys ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumen .resumen_derecha .resumen_hobbys ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color: #0bb5f4;
+
+}
+
+.resumen .resumen_derecha .resumen_hobbys ul li i{
+    font-size: 30px;
+}
+
+.resumen .resumen_derecha .resumen_hobbys ul li:before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -21px;
+    width: 21px;
+    height: 2px;
+    background: #0bb5f4;
+}
+
+.resumen .resumen_derecha .resumen_hobbys ul li:last-child::before{
+    display: none;
+}
+
+.resumen_derecha .resumen_articulo{
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+}
